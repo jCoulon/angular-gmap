@@ -1,17 +1,17 @@
 @font-face {
     font-family: robotoR;
-    src: url(./Fonts/Roboto-Regular.ttf);
+    src: url(../Fonts/Roboto-Regular.ttf);
 
 
 }
 @font-face {
     font-family: robotoL;
-    src: url(./Fonts/Roboto-Light.ttf);
+    src: url(../Fonts/Roboto-Light.ttf);
 
 }
 @font-face {
     font-family: robotoT;
-    src: url(./Fonts/Roboto-Thin.ttf);
+    src: url(../Fonts/Roboto-Thin.ttf);
 
 }
 
