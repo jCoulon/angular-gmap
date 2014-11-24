@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="monApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src='http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&language=en&v=3.17'></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body ng-controller="controller">
+    <div>
+        <div id="barreRecherche"></div>
+        <div>
+            <ui-gmap-google-map
+                    center="map.center"
+                    zoom="map.zoom"
+                    dragging="map.dragging"
+                    bounds="map.bounds"
+                    events="map.events"
+                    options="map.options"
+                    pan="true"
+                    control="map.control"
+                    >
+                <ui-gmap-search-box options="searchbox.options"
+                                    template="searchbox.template"
+                                    events="searchbox.events"
+                                    parentdiv="searchbox.parentdiv">
+
+                </ui-gmap-search-box>
+
+
+
+                    <ui-gmap-markers idkey="map.idkey" models="map.markers" coords="'self'" icon="'icon'"
+                                 click="'onClicked'" fit="true"></ui-gmap-markers>
+
+
+
+                </ui-gmap-window>
+            </ui-gmap-google-map>
+        </div>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="monApp.js"></script>
+</body>
+</html>

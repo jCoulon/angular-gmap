@@ -1,0 +1,92 @@
+@font-face {
+    font-family: robotoR;
+    src: url(./Fonts/Roboto-Regular.ttf);
+
+
+}
+@font-face {
+    font-family: robotoL;
+    src: url(./Fonts/Roboto-Light.ttf);
+
+}
+@font-face {
+    font-family: robotoT;
+    src: url(./Fonts/Roboto-Thin.ttf);
+
+}
+
+html,body{
+    margin : 0;
+    padding : 0px;
+    font-family: robotoR;
+}
+
+
+.angular-google-map-container {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.pac-container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#barreRecherche{
+    position : absolute;
+    margin-bottom: 20px;
+    width: 300px;
+    top: 20px;
+    left: 8%;
+    z-index: 3;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#pac-input         {
+    font-size:18px;
+    padding:10px 0px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+#pac-input:focus     { outline:none; }
+
+label{
+    position: absolute;
+    left:5px;
+    top: 20px;
+    transition:0.2s ease all;
+
+}
+
+#pac-input:focus ~ label, #pac-input:valid ~ label     {
+    top:-1px;
+    font-size:7pt;
+    color:#5264AE;
+}
+
+.bar  { position:relative; display:block; width:300px; }
+
+.bar:before   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#5264AE;
+    -webkit-transition: 0.3s ease-in all;
+}
+.bar:before {
+    left: 0%;
+}
+
+
+#pac-input:focus ~ .bar:before{
+    width:300px;
+}
