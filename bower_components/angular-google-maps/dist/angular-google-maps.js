@@ -4482,7 +4482,7 @@ Original idea from: http://stackoverflow.com/questions/22758950/google-map-drawi
 
             this.parentDiv.append(
             '<span class="bar"></span>' +
-            '<label>Rechercher une ville</label>');
+            '<label for="pac-input">Rechercher une ville</label>');
 
             return this.parentDiv;
 

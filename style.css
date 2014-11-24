@@ -60,7 +60,7 @@ html,body{
 label{
     position: absolute;
     left:5px;
-    top: 20px;
+    top: 12px;
     transition:0.2s ease all;
 
 }
